@@ -39,13 +39,13 @@ Are there missing values?
 
 ```{r}
 # which columns are integer
-
+jan_feb_flights %>% select(where(is.integer)) %>% names()
 
 # which columns are double
-
+jan_feb_flights %>% select(where(is.double)) %>% names()
 
 # which columns are character
-
+jan_feb_flights %>% select(where(is.character)) %>% names()
 
 ```
 
