@@ -1,6 +1,6 @@
 ---
 title: "Lab 03 – Critical-Responsible Use of GenAI for Data Science"
-author: "Team Name: Shane, Ethan"
+author: "abc: Shane, Ethan, Tommy"
 date: "`r Sys.Date()`"
 output: html_document
 ---
