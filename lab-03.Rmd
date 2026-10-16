@@ -73,12 +73,12 @@ _Your answer here_
 
 ## 2.1 Code
 
-```{r eval=FALSE} 
+```{r eval=TRUE} 
 ## REMEMBER TO SET eval=TRUE
 
 # join the datasets
 jan_feb_flights <- jan_feb_flights %>%
-  ____________(weather, by = c(______________________)) 
+  left_join(weather, by = c("origin", "year", "month", "day", "hour")) 
 ```
 
 ```{r}
@@ -92,12 +92,12 @@ Describe the difference in wind speed when wind_gust is missing vs not missing:
 
 _Your answer here_
 
-```{r eval=FALSE} 
+```{r eval=TRUE} 
 ## REMEMBER TO SET eval=TRUE
 
 # create a new variable, gust_present
 jan_feb_flights <- jan_feb_flights %>%
-  mutate(gust_present = _______________)
+  mutate(gust_present = !is.na(wind_gust))
 ```
 
 
